@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regedit</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:crimson;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="../贪吃蛇/images/gameBGImg1.png">
+<form action="regedit.html" method="post">
+    <div class="container">
+<p class="name">姓名：<input type="text" name="text" required="required"
+             placeholder="请输入您的姓名"></p>
+        用户名：<input type="text" name="text" placeholder="请输入登录所需的用户名" autofocus="autofocus">
+        <br>
+        密&nbsp&nbsp码 : &nbsp&nbsp<input type="password" name="password" placeholder="请输入密码" ><br>
+        再次确认密码 : &nbsp&nbsp<input type="password" name="password" placeholder="请重新输入密码" >
+<p class="sex">性别：<input type="radio" name="sex" required="required">男
+          <input type="radio" name="sex" >女
+          </p>
+<p class="email">邮箱：<input type="email" name="email" placeholder="请输入您的邮箱地址" required="required" autocomplete="off"></p>
+<p class="date">出生日期： <input type="date" name="date"></p>
+<p class="hobby">爱好： <input type="checkbox" name="checkbox" >篮球
+         <input type="checkbox" name="checkbox" >足球
+         <input type="checkbox" name="checkbox" >听音乐
+         <input type="checkbox" name="checkbox" >看书
+         <input type="checkbox" name="checkbox" >上网</p>
+
+<br>
+  自我评价：
+        <textarea name="textarea" placeholder="请输入信息，内容不能为空" required="required" cols="50" rows="9"></textarea><br>
+<p class="submit"><input type="submit" ></p>
+    <a href="login.html">注册成功！</a>
+
+    </div>
+</form>
+</body>
+</html>
