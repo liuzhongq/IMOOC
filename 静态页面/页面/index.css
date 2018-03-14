@@ -1,0 +1,181 @@
+/*All Tags*/
+*{
+    font-family: "Microsoft YaHei UI";
+    margin: 0;
+    padding: 0;
+    /*border:none;*/
+    text-align: center;
+}
+h1{
+    color: #f46208;
+    font-size: 48px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*header*/
+header {
+    height: 70px;
+    background: #2e2e2e;
+}
+header > .container {
+    width: 100%;
+    margin: 0 auto;
+}
+header > .container > a{
+    display: block;
+    float: left;
+    margin: 17px 25px;
+}
+header > .container > nav {
+    float: right;
+    margin-right: 150px ;
+}
+header > .container > nav > a{
+    width: 80px;
+    display: block;
+    float: left;
+    line-height: 70px;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 50px;
+    color: #ffffff;
+}
+header > .container > nav > a:hover{
+    background: #f46028;
+    color: #feb800;
+}
+/*banner*/
+.banner{
+    width: 100%;
+}
+.banner > img{
+    width: 100%;
+    position: relative;
+}
+.banner > div{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.banner > div >h1{
+    color: #fff;
+    font-size: 70px;
+}
+.banner > div >p{
+    color: #fff;
+    text-align: center;
+}
+/*Portfolio*/
+.protfolio{
+    margin-top: 60px;
+}
+.protfolio > h1{
+    padding: 50px;
+    text-align: center;
+}
+.protfolio > p{
+    text-align: center;
+}
+.protfolio > p:last-of-type{
+    padding-bottom: 50px;
+}
+.protfolio > nav{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.protfolio > nav  > a{
+    color:#f46028;
+    border: 1px solid #f46028;
+    margin-left: 20px;
+    height: 500px;
+    width: 80px;
+}
+.protfolio > nav  >a:hover{
+    background: #23AAE1;
+}
+.protfolio > img{
+    width: 100%;
+    margin-top: 30px;
+}
+/*Stats*/
+.Stats {
+    width: 100%;
+    margin-top: 50px;
+}
+.Stats  > h1{
+    padding: 50px;
+}
+.Stats  > dl{
+    margin: 30px auto;
+    display: inline-block;
+    margin-left: 80px;
+}
+.Stats  > dl > dd:first-of-type{
+    margin-top: 5px;
+}
+.Stats  > dl > dd:last-of-type{
+    margin-top: 10px;
+    color: #f46028;
+    font-size: 46px;
+}
+/*Team*/
+.Team{
+    /*position: relative;*/
+    width: 100%;
+    color: #ffffff;
+    /*height: 500px;*/
+    background:#2e2e2e;
+}
+.Team > h1{
+    padding-top: 50px;
+    color: #f46028;
+}
+.Team > dl{
+    margin: 60px auto;
+    display: inline-block;
+    margin-left: 50px;
+}
+/*Contact us*/
+.Contact  > h1{
+    padding: 50px;
+}
+.Contact  > p:last-of-type{
+    padding-bottom: 30px;
+}
+.Contact  > input{
+    height: 20px;
+    width: 250px;
+}
+.Contact  > input:last-of-type{
+    background: #f46028;
+    height: 50px;
+    width: 150px;
+    border:none;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 20px;
+}
+.Contact  > input:last-of-type:hover{
+    cursor: pointer;
+}
+.Contact > textarea{
+    resize: none;
+    height: 200px;
+    width: 510px;
+    margin-top: 10px;
+    line-height: 200px;
+}
+/*footer*/
+footer{
+    background: #2e2e2e;
+}
+footer > p{
+    color: #ffffff;
+    height: 100px;
+    line-height: 100px;
+}
