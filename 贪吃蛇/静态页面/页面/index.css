@@ -92,8 +92,10 @@ header > .container > nav > a:hover{
     color:#f46028;
     border: 1px solid #f46028;
     margin-left: 20px;
-    height: 500px;
-    width: 80px;
+    display: inline-block;
+    padding: 5px 10px;
+    /*height: 500px;*/
+    /*width: 80px;*/
 }
 .protfolio > nav  >a:hover{
     background: #23AAE1;
@@ -110,15 +112,20 @@ header > .container > nav > a:hover{
 .Stats  > h1{
     padding: 50px;
 }
-.Stats  > dl{
-    margin: 30px auto;
-    display: inline-block;
-    margin-left: 80px;
+.Stats_bottom {
+    width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
 }
-.Stats  > dl > dd:first-of-type{
+.Stats_bottom   dl{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.Stats_bottom dl > dd:first-of-type{
     margin-top: 5px;
 }
-.Stats  > dl > dd:last-of-type{
+.Stats_bottom dl > dd:last-of-type{
     margin-top: 10px;
     color: #f46028;
     font-size: 46px;
@@ -144,9 +151,20 @@ header > .container > nav > a:hover{
 .Contact  > h1{
     padding: 50px;
 }
+/*.Contact > form{*/
+    /*height: 1000px;*/
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+/*}*/
+/*.Contact > form > input{*/
+    /*text-align: center;*/
+    /*width: 30%;*/
+/*}*/
+
 .Contact  > p:last-of-type{
     padding-bottom: 30px;
 }
+
 .Contact  > input{
     height: 20px;
     width: 250px;
