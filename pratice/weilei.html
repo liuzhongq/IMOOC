@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weilei</title>
+    <style type="text/css">
+        input   {
+            width: 200px;
+            height: 50px;
+        }
+        input:hover{
+            border: 5px solid #f00 ;
+        }
+        input[type="text"]:focus{
+            background: #f46208;
+        }
+        input[type="password"]:focus{
+            background: #feb800;
+        }
+        input:disabled{
+            background: #000;
+            border:5px solid #ff0000 ;
+        }
+    </style>
+</head>
+<body>
+用户：<input type="text" name="text" disabled="disabled">
+密码： <input type="password" name="pwd">
+</body>
+</html>

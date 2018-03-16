@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            margin: auto;
+            background: #ececec;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            // 在此完成任务
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext('2d');
+
+            context.moveTo(100,100);
+            context.lineTo(300,200);
+            context.stroke();
+            context.moveTo(300,200);
+            context.lineTo(500,100);
+
+            context.stroke();
+            context.moveTo(100,100);
+            context.lineTo(500,100);
+            context.stroke();
+        };
+    </script>
+</head>
+<body>
+<canvas id="canvas" width="800" height="600">注意，浏览器推荐使用Chrome！</canvas>
+</body>
+</html>
