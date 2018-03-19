@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+
+    <style type="text/css">
+        div{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            display: block;
+            border: 10px solid #f46208;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -moz-border-radius:50% ;
+            border-radius: 50%;
+            font-size: 25px;
+            text-align: center;
+            line-height: 200px;
+        }
+        div:before,
+        div:after {
+            position: absolute;
+            content: "";
+            display: block;
+            border: 1px solid #f46208;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius:50% ;
+            -moz-border-radius:50% ;
+            border-radius: 50%;
+        }
+        div:after {
+            position: absolute;
+            content: "";
+            display: block;
+            border: 1px solid #f46208;
+            -webkit-border-radius: 25%;
+            -moz-border-radius: 25%;
+            -ms-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            }
+        div:before{
+            width: 50px;
+            height: 50px;
+            bottom: -30px;
+            right: 0px;
+        }
+        div:after{
+            width: 20px;
+            height: 20px;
+            bottom: -50px;
+            right: -15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>这是Css中的圆角属性</div>
+</body>
+</html>
