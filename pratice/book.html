@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book</title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 200px;
+            background: #ff0000;
+            transform: skew(0deg,10deg);
+            position: relative;
+            top: 50px;
+ }
+        div:before{
+            content: "";
+            width: 100px;
+            height: 200px;
+            background: #ff0000;
+            transform: translate(100px,-68px)skew(0deg,-19deg);
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
