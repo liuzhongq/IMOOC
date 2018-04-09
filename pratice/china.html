@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>China</title>
+    <style type="text/css">
+        .stars {
+            width: 600px;
+            height: 400px;
+            background: #ff0000;
+            position: absolute;
+        }
+        .star{
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-bottom: 70px solid yellow;
+            border-right: 100px solid transparent;
+            transform: rotate(36deg);
+            position: relative;
+            margin: 43px;
+            margin-top: 111px;
+        }
+        .star::after{
+            content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-bottom: 70px solid yellow;
+        border-right: 100px solid transparent;
+        position: relative;
+        transform: rotate(74deg);
+        left:-98px;
+        top: -67px;
+
+        }
+        .star::before{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-bottom: 70px solid yellow;
+            border-right: 100px solid transparent;
+            position: relative;
+            transform: rotate(290deg);
+            left: -103px;
+            top: 2px;
+        }
+        #star2{
+            transform:translate(171px ,-325px) scale(.2);
+            position: absolute;
+        }
+        #star3{
+            transform:translate(222px ,-255px) scale(.2);
+            position: absolute;
+        }
+        #star4{
+                     transform:translate(222px ,-185px) rotate(252deg) scale(.2);
+                     position: absolute;
+                 }
+        #star5{
+            transform:translate(171px ,-115px) scale(.2);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="stars">
+    <div class="star" id="star1"></div>
+    <div class="star" id="star2"></div>
+    <div class="star" id="star3"></div>
+    <div class="star" id="star4"></div>
+    <div class="star" id="star5"></div>
+</div>
+</body>
+</html>
