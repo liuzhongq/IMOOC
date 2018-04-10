@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布物流信息</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:crimson;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="article.jpg">
+<form action="regedit.html" method="post">
+    <div class="container">
+        <p class="name">货物名称：<input type="text" name="text" required="required"
+                                  placeholder="请输入物流信息"></p>
+        起始地：<input type="text" name="text" placeholder="请输入物流起始地" autofocus="autofocus">
+        <br>
+        目的地：<input type="text" name="text" placeholder="请输入物流目的地" autofocus="autofocus">
+        <p class="email">联系电话：<input type="text" name="email" placeholder="请输入您的邮箱地址" required="required" autocomplete="off"></p>
+
+        <br>
+        备注：
+        <textarea name="textarea" placeholder="请输入信息，内容不能为空" required="required" cols="50" rows="9"></textarea><br>
+        <p class="date">发布日期： <input type="date" name="date"></p>
+        <p class="submit"><input type="submit" value="提交">
+        <input type="reset" value="重置">
+            <a href="index.html">返回主页</a></p>
+
+    </div>
+</form>
+</body>
+</html>

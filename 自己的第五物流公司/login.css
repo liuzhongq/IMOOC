@@ -1,0 +1,88 @@
+
+.container{
+    text-align: center;
+}
+.form-container {
+    width: 360px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 0 20px 0;
+}
+.form-container h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+.form-container form, .form-container .form {
+    background: #FFF;
+    display: block;
+    padding: 10px 20px 0;
+    border: 1px solid #e7ebef;
+}
+.form-ctrl {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #e7ebef;
+}
+.form-ctrl input {
+    width: 100%;
+    background: #FFF;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+.form-ctrl a {
+    font-size: 14px;
+}
+.form-ctrl img, .form-ctrl a {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}
+form-ctrl:last-child {
+    border: none;
+}
+input, textarea, select, button {
+    vertical-align: middle;
+}
+
+body, input, textarea, select, button {
+    font: 12px "Microsoft YaHei", Verdana, arial, sans-serif;
+    line-height: 22px;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.btn-submit {
+    padding: .8em 0;
+    display: block;
+    width: 100%;
+    background: #fd7f24;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    margin-top: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.type{
+    margin-top: 5px;
+}
+.type a.bd {
+    border-right: 1px solid #3680e4;
+}
+.type a {
+    padding: 0 11px;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3278e6;
+    blur: expression(this.blur());
+}

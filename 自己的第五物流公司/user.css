@@ -1,0 +1,75 @@
+/*All Tags*/
+*{
+    font-family: "Microsoft YaHei UI";
+    margin: 0;
+    padding: 0;
+    /*border:none;*/
+    text-align: center;
+}
+h1{
+    color: #f46208;
+    font-size: 48px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*header*/
+header {
+    height: 70px;
+    background: #2e2e2e;
+}
+header > .container {
+    width: 100%;
+    margin: 0 auto;
+}
+header > .container > a{
+    display: block;
+    float: left;
+    margin: 17px 25px;
+}
+header > .container > nav {
+    float: right;
+    margin-right: 150px ;
+}
+header > .container > nav > a{
+    width: 180px;
+    display: block;
+    float: left;
+    line-height: 70px;
+    font-size: 14px;
+    height: 70px;
+    margin-left: 50px;
+    color: #ffffff;
+}
+header > .container > nav > a:hover{
+    background: #fff;
+    color: #2e2e2e;
+}
+/*banner*/
+.banner{
+    width: 100%;
+}
+.banner > img{
+    width: 100%;
+    position: relative;
+}
+.banner > div{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.banner > div >h1{
+    color: #fdf9ff;
+    font-size: 90px;
+    margin-top: -70px;
+    /*margin-left: -50px;*/
+}
+.banner > div >p{
+    color: #2e2e2e;
+    text-align: center;
+    font-size: 20px;
+}
+/*Stats*/
