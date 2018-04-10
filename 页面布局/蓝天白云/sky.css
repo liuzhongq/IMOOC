@@ -1,13 +1,16 @@
+/*All Tags*/
 *{
     margin: 0;
     padding: 0;
 }
+/*蓝天*/
 .sky{
-    height: 450px;
+    height: 60vh;
     width: 100%;
     background: linear-gradient(rgba(196,228,253,1)  ,rgba(255,255,255,0));
     position: relative;
 }
+/*白云块*/
 .cloud{
      width: 103px;
      height: 30px;
@@ -18,39 +21,41 @@
      left: 40%;
      top:10%;
  }
+/*伪元素*/
 .cloud:after{
     content: "";
-    height: 29px;
-    width: 46px;
+    height: 50px;
+    width: 50px;
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 50%;
     display: block;
     position: absolute;
     top: -15px;
-    left: 48px;
+    left: 35px;
 
 }
 .cloud:before{
     content: "";
-    height: 36px;
-    width: 46px;
+    height: 46px;
+    width: 35px;
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 50%;
     display: block;
     position: absolute;
-    top: -5px;
+    top: -9px;
     left: 13px;
-    transform: rotate(7deg);
+    transform: rotate(-34deg);
 }
+/*白云的变形*/
  #cloud2{
     transform: translate(250px,50px) scale(1.5);
     /*transform: scale(1.5);*/
     position: absolute;
 }
 #cloud3{
-    transform: translate(83px,80px)scale(.9);
+    transform: translate(83px,80px) scale(.9);
     /*transform: scale(1.5);*/
     position: absolute;
 }
@@ -64,8 +69,9 @@
     /*transform: scale(1.5);*/
     position: absolute;
 }
+/*草地*/
 .grass{
-    height: 300px;
+    height: 40vh;
     width: 100%;
     background: linear-gradient(rgba(255,255,255,0) ,rgba(148,190,89,1));
 }
