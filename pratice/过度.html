@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度</title>
+    <style type="text/css">
+        div {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            cursor: pointer;
+            text-align: center;
+            background: #abcdef;
+            transform: rotate(0deg) scale(1);
+            -webkit-transition:transform 2s ease-in-out .1s ;
+                -moz-transition:transform 2s ease-in-out  .1s;
+                  -ms-transition:transform 2s ease-in-out .1s ;
+                   -o-transition:transform 2s ease-in-out .1s ;
+                       transition:transform 2s ease-in-out .1s ;
+        }
+        div:hover{
+            transform: rotate(360deg) scale(2);
+            -webkit-transition:transform 2s ease-in-out  ;
+            -moz-transition:transform 2s ease-in-out  ;
+            -ms-transition:transform 2s ease-in-out  ;
+            -o-transition:transform 2s ease-in-out  ;
+            transition:transform 2s ease-in-out ;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>www.imooc.com</div>
+</body>
+</html>
