@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下滑箭头</title>
+    <style type="text/css">
+        div {
+            font-family: Arial;
+            font-size: 72px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            transform: rotate(90deg) translatey(-50px);
+            animation: lname 1s ease-in-out .5s infinite  normal ;
+        }
+
+        @keyframes  lname {
+            0% {
+                transform: translatey(-50px) rotate(90deg);
+            }
+            /*25% {*/
+            /*transform: translatey(-30px) rotate(90deg);*/
+        /*}*/
+            /*50% {*/
+                /*transform: translatey(-20px) rotate(90deg);*/
+            /*}*/
+            75% {
+                transform: translatey(-10px) rotate(90deg);
+            }
+            100% {
+                transform: translatey(0px) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>&gt;</div>
+</body>
+</html>
