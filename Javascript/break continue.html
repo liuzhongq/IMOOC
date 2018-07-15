@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break continue</title>
+</head>
+<body>
+<script>
+// var sum=0;
+// for(var i=1;i<=10;i++){
+//     if(i%5==0){
+//         break;
+//     }sum+=1;
+// }console.log(sum);
+//
+var num=0;
+for(var j=1;j<=10;j++){
+    if(j%5==0){
+       continue;
+    }num+=j;
+}document.write(num);
+//0到50之间，除了20和30之外的5的倍数的数
+    for (var m=0;m<=50;m+=5){
+        if(m==20||m==30){
+           continue;
+        }console.log(m);
+        }
+</script>
+</body>
+</html>
