@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调用和返回值</title>
+</head>
+<body>
+<script>
+    function add(num1,num2) {
+        var sum=num1+num2;
+        return sum;
+    }
+    // console.log(add(30,50));
+    // alert(add(99,35));
+    // var s=add(10,-9)
+    // document.write('10+-9='+s);
+    function myfun(arg) {
+        //如果arg是非数字，不做任何操作，否则返回arg的2倍
+        if (isNaN(arg)) return;
+        return  arg*2;
+    }
+    document.write(myfun("kjgj"));
+</script>
+</body>
+</html>
