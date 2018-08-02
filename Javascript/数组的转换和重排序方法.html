@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(join()-reverse()-sort())</title>
+</head>
+<body>
+<script>
+    //join 把数组转换为字符串
+    var nums=[2,4,5];
+    var str=nums.join();
+    console.log(typeof(str) );
+    var words=["border","left","color"];
+        //border-left-color
+    var wordstr=words.join("-");
+    console.log(wordstr);
+    //reverse
+    nums.reverse();
+    console.log(nums);
+    var strs=["a","b","c","d"];
+    var newstr=strs.reverse().join("");
+    console.log(newstr);
+    //9,23,15,88,12  升序
+    var arr=[9,23,15,88,12];
+    arr.sort(function (a,b) { return a-b});
+    console.log(arr);
+</script>
+</body>
+</html>
