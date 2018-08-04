@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多种方法</title>
+</head>
+<body>
+<script>
+    var a=[1,3,"a","b","P"],
+        b;
+    //  1.遍历
+    b=new Array();
+    for (var i=0;i<a.length;i++){
+        b.push(a[i]);
+    }
+    // console.log(b);
+    //2.concat
+    b=[].concat(a);
+    // console.log(b);
+    //3.slice
+    b=a.slice(0);
+    console.log(b);
+</script>
+</body>
+</html>
