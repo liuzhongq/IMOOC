@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexof</title>
+</head>
+<body>
+<script>
+    var nums=[1,2,3,4,5,6 ];
+    // var pos=nums.indexOf(5,2);
+    // var pos=nums.lastIndexOf(2);
+    var pos=nums.indexOf("7");
+    console.log(pos);
+    //封装一个方法实现indexof的功能
+    function ArrayIndecof(arr,value) {
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]==value){
+                return i;
+            }
+        }
+        return -1;
+    }
+    var pos2=ArrayIndecof(nums,5);
+    console.log(pos2);
+</script>
+</body>
+</html>
