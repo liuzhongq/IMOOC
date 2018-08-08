@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>今日头条笔试题2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 30%;
+            margin: 300px auto;
+        }
+        .content{
+            position: relative;
+        }
+        .content ul{
+            position: absolute;
+            top:32px;
+            width: 200px;
+            border-top:none;
+        }
+        .content ul li{
+            list-style-type: none;
+            border-top:1px solid #EEEEEE;
+            font-weight: normal;
+            position: relative;
+        }
+        .content ul li:hover .close{
+            display: block;
+        }
+        /* .content ul li::after{
+        content: 'X';
+        position: absolute;
+        right: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        } */
+        .input{
+            outline: none;
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+        }
+        .close{
+            background: transparent;
+            float: right;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content">
+        <input class="input">
+        <ul>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    var close=document.getElementsByClassName("close");
+    var input=document.getElementsByClassName("input")[0];
+    var left=input.offsetLeft;
+    var arr=['11223','2133','1111','222','332'];
+    var button="<button class='close'>X</button>";
+    input.onkeyup=function(e){
+        var value=this.value;
+        var ul=document.getElementsByTagName('ul')[0];
+        ul.style.left=left+"px";
+        ul.style.border="none";
+        ul.innerHTML="";
+        if(value){
+            var reg=new RegExp(value+"+");
+            for(var i=0;i<arr.length;i++){
+                if(arr[i].match(reg)){
+                    var li=document.createElement('li');
+                    li.innerHTML=arr[i]+button;
+                    ul.style.border="1px solid black";
+                    ul.appendChild(li);
+                }
+            }
+            e=e||window.event;
+            switch(e.keyCode){
+                case 13: var newLi=document.createElement('li');
+                    var newValue=input.value;
+                    newLi.innerHTML=newValue+button;
+                    ul.appendChild(newLi);
+                    arr.push(newValue);
+                    input.value="";
+                    break;
+            }
+        }
+        close=document.getElementsByClassName("close");
+        for(let i=0;i<close.length;i++){
+            close[i].onclick=function(){
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+        }
+    }
+</script>
+</html>
