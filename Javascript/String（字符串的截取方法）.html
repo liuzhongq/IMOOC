@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>intercept</title>
+</head>
+<body>
+<script>
+    var str="intercept string";
+    //以slice截取erc部分
+    console.log(str.slice(3,6));//end本身不截取
+    console.log(str.slice(6));//从6的位置一直到结束
+    console.log(str.slice(-3,-6));
+    console.log(str.slice(-6,-3));
+    //以substring截取erc部分
+    console.log(str.substring(3,6));//end本身不截取（正数和slice一样）
+    console.log(str.substring(-7,6));//（0，6）
+    console.log(str.substring(-2,-5));//（0，0）
+    console.log(str.substring(2,-5));//(0,2)
+    //以substr截取rec部分
+    console.log(str.substr(3,3));//从第三个位置截取三个
+    console.log(str.substr(-5,4));//从11截取四个
+    console.log(str.substr(3,-4));//空
+</script>
+</body>
+</hsub
